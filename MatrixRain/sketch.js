@@ -28,7 +28,6 @@ let BASETAILLENGTH = 2
 let TEXTSIZE = 20;
 let CHARLIMIT = [65, 90]
 
-
 function setup() {
   createCanvas(...WINDOW);
   frameRate(FRAMERATE);
@@ -71,6 +70,7 @@ function draw() {
       );
       fill(...FONTCOLOR);
     }
+
     if (pos[numDrop][1] - (TEXTSIZE * tail[numDrop]) >= WINDOW[1]) {
       pos[numDrop] = [
         parseInt(Math.random() * 10000 % CLIENTX),
